@@ -23,7 +23,7 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: my-trained-pipeline
-        path: titanic_model/trained_models/*.pkl
+        path: titanic_model_pritika/titanic_model/trained_models/*.pkl
         retention-days: 1
 
   test:
