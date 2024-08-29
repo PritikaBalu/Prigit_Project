@@ -40,9 +40,9 @@ jobs:
     - uses: actions/download-artifact@v2
       with:
         name: my-trained-pipeline
-        path: titanic_model/trained_models
+        path: titanic_model_pritika/titanic_model/trained_models
     - name: Install dependencies
-      run: pip install -r requirements/test_requirements.txt
+      run: pip install -r titanic_model_pritika/requirements/test_requirements.txt
     - name: Test with pytest
       run: pytest
 
