@@ -63,8 +63,11 @@ jobs:
         path: titanic_model_pritika/titanic_model/trained_models
     - name: Install dependencies
       run: pip install --upgrade build
+    - uses: actions/download-artifact@v2
+      with:
+        name: my-trained-pipeline
+        path: titanic_model_pritika/
     - name: Build package
-      path: titanic_model_pritika/
       run: python -m build
     - uses: actions/upload-artifact@v2
       with:
