@@ -86,7 +86,7 @@ jobs:
     - uses: actions/download-artifact@v2
       with:
         name: my-build-package
-        path: titanic_model_pritika/titanic_model_api
+        path: ./titanic_model_pritika/TITANIC_MODEL_API
 
     - name: Login to Docker hub
       env:
