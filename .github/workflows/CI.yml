@@ -25,7 +25,7 @@ jobs:
         name: my-trained-pipeline
         path: titanic_model_pritika/titanic_model/trained_models/*.pkl
         retention-days: 1
-echo " Going to start test" | $GITHUB_PATH
+  echo " Going to start test"
 
   test:
     needs: train
