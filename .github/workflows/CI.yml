@@ -64,6 +64,7 @@ jobs:
     - name: Install dependencies
       run: pip install --upgrade build
     - name: Build package
+      path: titanic_model_pritika/
       run: python -m build
     - uses: actions/upload-artifact@v2
       with:
