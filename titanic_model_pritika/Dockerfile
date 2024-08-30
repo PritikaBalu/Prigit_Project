@@ -4,14 +4,9 @@ FROM python:3.10
 ADD . /titanic_model_pritika
 # specify working directory
 WORKDIR /titanic_model_pritika
-# install dependencies
-RUN pip install -r requirements/requirements.txt
-# specify working directory
-WORKDIR /titanic_model_pritika/TITANIC_MODEL_API
 # update pip
 RUN pip install --upgrade pip
 # install dependencies
-RUN pip install -r requirements.txt
 # expose port for application
 EXPOSE 8001
 # start fastapi application
