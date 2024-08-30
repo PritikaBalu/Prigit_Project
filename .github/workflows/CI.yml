@@ -25,6 +25,7 @@ jobs:
         name: my-trained-pipeline
         path: titanic_model_pritika/titanic_model/trained_models/*.pkl
         retention-days: 1
+echo " Going to start test" | $GITHUB_PATH
 
   test:
     needs: train
@@ -45,7 +46,7 @@ jobs:
       run: pip install -r titanic_model_pritika/requirements/test_requirements.txt
     - name: Test with pytest
       run: pytest
-
+echo " Going to start build" | $GITHUB_PATH
   build:
     needs: [train, test]
     runs-on: ubuntu-latest
