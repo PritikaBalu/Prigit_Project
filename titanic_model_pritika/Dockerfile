@@ -3,7 +3,7 @@ FROM python:3.10
 # copy application files
 ADD . /titanic_model_pritika
 # specify working directory
-WORKDIR /titanic_model_pritika/TITANIC_MODEL_API
+WORKDIR /titanic_model_pritika
 # update pip
 RUN pip install --upgrade pip
 # install dependencies
