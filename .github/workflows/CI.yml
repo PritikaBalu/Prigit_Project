@@ -73,7 +73,7 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: my-build-package
-        path: dist/*.whl
+        path: ./titanic_model_pritika
         retention-days: 1
  
   push-image:
@@ -86,7 +86,7 @@ jobs:
     - uses: actions/download-artifact@v2
       with:
         name: my-build-package
-        path: ./titanic_model_pritika/TITANIC_MODEL_API
+        path: ./titanic_model_pritika
 
     - name: Login to Docker hub
       env:
