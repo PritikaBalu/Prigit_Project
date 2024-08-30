@@ -74,7 +74,7 @@ jobs:
         name: my-build-package
         path: dist/*.whl
         retention-days: 1
-
+ 
   push-image:
     needs: [train, test, build]
     runs-on: ubuntu-latest
