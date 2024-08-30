@@ -7,7 +7,6 @@ WORKDIR /titanic_model_pritika
 # update pip
 RUN pip install --upgrade pip
 # install dependencies
-RUN pip install -r TITANIC_MODEL_API/requirements.txt
 # expose port for application
 EXPOSE 8001
 # start fastapi application
