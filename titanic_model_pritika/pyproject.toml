@@ -4,7 +4,7 @@ requires = [
     "wheel"
 ]
 build-backend = "setuptools.build_meta"
-
+ 
 [tool.pytest.ini_options]
 minversion = "2.0"
 addopts = "-rfEX -p pytester --strict-markers"
